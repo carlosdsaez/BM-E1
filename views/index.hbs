@@ -1,0 +1,60 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+{{#if user includeZero=true}}
+
+<div data-component="targeting-modal-3">
+	<div class="modal fade" id="targeting-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-0 border-0">
+				<button aria-label="Close" class="close mt-2 mr-2" data-dismiss="modal" type="button"><span aria-hidden="true">x close</span></button>
+				<div class="px-4 pb-3 pt-4">
+					<div class="text-center mb-4">
+						<div id="popupTitle">
+							<div>Send us your data and get great discounts!</div>
+
+						</div>
+					</div>
+
+					<form action="/sendmail" method="POST" class="mb-5">
+
+						<div class="checkbox-wrap pl-3 py-2 mb-2">
+							<label class="custom-control-description mr-auto" for="firstname">First Name:</label> 
+              <input class="custom-control-description mr-auto2" name="firstname" type="text" placeholder="{{user.firstname}}" value="{{user.firstname}}">
+						</div>
+
+            <div class="checkbox-wrap pl-3 py-2 mb-2">
+							<label class="custom-control-description mr-auto" for="lastname">Last Name:</label> 
+              <input class="custom-control-description mr-auto2" name="lastname" type="text" placeholder="{{user.lastname}}" value="{{user.lastname}}">
+						</div>
+
+            <div class="checkbox-wrap pl-3 py-2 mb-2">
+							<label class="custom-control-description mr-auto" for="phone">Phone number:</label> 
+              <input class="custom-control-description mr-auto2" name="phone" type="text" placeholder="{{user.phone}}" value="{{user.phone}}">
+						</div>
+
+						<div class="checkbox-wrap pl-3 py-2 mb-2">
+							<label class="custom-control-description mr-auto" for="email">Email:</label> 
+              <input class="custom-control-description mr-auto2" name="email" type="text" placeholder="{{user.email}}" value="{{user.email}}">
+						</div>
+
+						<div class="checkbox-wrap pl-3 py-2 mb-2">
+							<label class="custom-control-description mr-auto" for="date">Your Birth Date:</label> 
+              <input class="custom-control-description mr-auto2" id="datepicker" name=date placeholder="01/30/2000">
+						</div>
+            <button id="popupButton" >Send the info!</button>
+            
+
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{/if}}
+
+    <script src="/javascripts/script.js"></script>

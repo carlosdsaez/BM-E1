@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css');
+@import url('https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css');
+
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}em;
+}
+body{
+  padding-top: 4rem;
+  padding-left: 4rem
+}
+[data-component='targeting-modal-3'] {
+	.modal {
+		font-family: 'Open Sans', sans-serif;
+	}
+	.modal-dialog {
+		max-width: 690px;
+	}
+	.modal-content {
+		background: #f1f1f1;
+	}
+	.close {
+		opacity: 1;
+		color: #616161;
+		position: absolute;
+		right: 0;
+		font-size: em(10);
+		font-weight: 800;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
+  form {
+    min-height: 300px;
+    overflow-y: scroll;
+  }
+  
+	.custom-select {
+		width: 220px;
+		padding: 5px 15px;
+		background-color: #009eff;
+		color: #fff;
+		font-weight: 700;
+		font-size: em(14);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		background-image: url('https://res.cloudinary.com/dt9b7pad3/image/upload/v1499935576/angle-down_font_awesome_kzm3ki.png');
+		background-position: right center 5px;
+		background-size: 20px;
+		option {
+			font-weight: 600;
+		}
+	}
+	.custom-checkbox {
+		background: #ffffff;
+	}
+	.custom-control-description {
+		color: #009ffd;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: em(14);
+    line-height: 1.7;
+    min-width: 6rem;
+	}
+	.custom-checkbox .custom-control-indicator {
+		border-radius: 0;
+		border: 2px solid #cdc9ca;
+		top: 0.1rem;
+		width: 1.3rem;
+		height: 1.3rem;
+		position: relative;
+    background: #fff;
+    box-shadow: none;
+	}
+  .custom-control-input:checked~.custom-control-indicator {
+    background-color: #38b2fd;
+  }
+	.checkbox-wrap {
+		background: #fff;
+	}
+	.btn-circle {
+		background-color: #009eff;
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+	}
+	p {
+		text-transform: uppercase;
+		font-size: em(11);
+		color: #5d5e62;
+		text-decoration: underline;
+		font-weight: 700;
+		letter-spacing: 1px;
+  }
+  
+  #popupTitle {
+    background-color: #009eff;
+    color: #fff;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #eee;
+    padding-left: 1rem;
+}
+.no-outline:focus {
+  outline: none;
+  }
+
+.mr-auto{
+  min-width: 8rem;
+}
+
+.mr-auto2{
+  min-width: 17rem;
+}
+
+#datepicker{
+  min-height: 2rem;
+}
+
+#popupButton{
+  background-color: #009eff;
+  color: #fff;
+  height: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+
+.invisible{
+  display: none;
+}
+
+}
